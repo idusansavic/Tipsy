@@ -57,6 +57,7 @@ class CalculatorViewController: UIViewController {
 		self.performSegue(withIdentifier: "goToResults", sender: self)
 	}
 	
+	//MARK: - Prepare for Segue func
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "goToResults" {
 			let destinationVC = segue.destination as! ResultsViewController
